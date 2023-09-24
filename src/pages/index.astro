@@ -1,10 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import NavElement from '../components/NavElement.astro';
 ---
 
-<Layout title="Filip Senier | Portfolio">
-	<main>
+<Layout title="Filip Senier | Home">
+	<nav>
+		<ul>
+			<NavElement href='/' name='Home' />
+			<NavElement href='/projects' name='Projects' />
+			<NavElement href='/' name='Home' />
+			<NavElement href='/' name='Home' />
+		</ul>
+	</nav>
+	<main class="bg-gray-900">
 		<h1 class="text-center text-cyan-200 text-2xl">Filip Senier</h1>
 	</main>
 </Layout>
